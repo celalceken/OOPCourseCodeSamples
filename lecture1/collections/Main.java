@@ -1,52 +1,50 @@
-package cc.oop.ders3.collections;
+package cc.oop.lecture1.collections;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
 
-
     public static void main(String[] Args) {
+        // Static array initialization
+        //Fixed size determined at compile-time. They cannot be resized during execution.
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        double[] decimals = new double[8];
+        System.out.println(decimals.length);
+
+        // Dynamic array initialization
+        // The size of the array is determined at runtime and can be resized during execution.
+        // Unlike static arrays, dynamic arrays can grow or shrink as needed.
+        List<Book> books = new ArrayList<>(5);
 
         Book book1 = new Book("Database Management Systems ", 100.00);
         Book book2 = new Book("OOP ", 125.00);
         Book book3 = new Book("Network Programming", 150.00);
         Book book4 = new Book("Data Structures", 250.00);
 
-
-        List<Book> books = new Vector<Book>();
         books.add(book1);
         books.add(book2);
         books.add(2, book3);
         books.add(3, new Book("UML", 160.00));
         books.add(book4);
 
-
         System.out.println(books);
-
-        List<Book> books = new Vector<Book>();
-        books.add(book1);
-        books.add(book2);
-        books.add(2, book3);
-        books.add(3, new Book("UML", 160.00));
-        books.add(book4);
-
-
-        System.out.println(books);
-
 
         for (int i = 0; i < books.size(); i++)
             System.out.println(books.get(i));
 
-
         for (Book book : books)
             System.out.println(book.getName());
 
-        System.out.println("*************Lambda statemens-forEach *************");
+        /**
+         * Lambda expressions are a powerful feature in Java that enhances code clarity.
+         */
+        System.out.println("*************Lambda statements-forEach *************");
 
         books.forEach(book -> System.out.println(book));
 
-        System.out.println("*************Lambda statemens-forEach *************");
+        System.out.println("------- Lambda expression-forEach -------");
 
         books.forEach(book -> System.out.println(book.getName()));
 
@@ -56,7 +54,7 @@ public class Main {
         }
         System.out.println("Total unit price=" + sum);
 
-        System.out.println("*************Lambda statemens-sum *************");
+        System.out.println("------- Lambda expression-sum -------");
 
         sum = books
                 .stream()
@@ -74,7 +72,7 @@ public class Main {
                 .sum();
         System.out.println("Total unit price- paralel=" + sum);
 
-        System.out.println("*************Lambda statemens-filtering *************");
+        System.out.println("------- Lambda expression-filtering -------");
 
         List<Book> filteredBooks = books
                 .stream()
@@ -82,8 +80,7 @@ public class Main {
                 .collect(Collectors.toList());
         System.out.println(filteredBooks);
 
-
-        System.out.println("*************Lambda statemens-sorting *************");
+        System.out.println("------- Lambda expression-sorting -------");
         List<Book> sortedAndFilteredBooks = books
                 .stream()
                 //.filter(item -> item.getAdi().startsWith("N"))
@@ -91,27 +88,5 @@ public class Main {
                 //.sorted(Comparator.comparing(Kitap::getAdi).reversed())
                 .collect(Collectors.toList());
         System.out.println(sortedAndFilteredBooks);
-
     }
-
-}
-
-
-    /*List<CompletableFuture<JSONObject>> scrapedProducts = new ArrayList<>();
-
-        loadDrivers.getDrivers().stream().forEach(driver -> {
-        try {
-            if (driver != null)
-                scrapedProducts.add(driver.driverTest());
-        } catch (Exception e) {
-            log.debug("Problem with drivers.");
-        }
-    });
-
-        scrapedProducts.stream().forEach(item -> {
-        try {
-            if (item.get() != null && !item.get().toString().equals("{}")) {
-                log.debug("item:{}", item.get().toString(1));
-*/
-
 }

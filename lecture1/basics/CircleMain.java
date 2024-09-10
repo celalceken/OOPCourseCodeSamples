@@ -1,34 +1,44 @@
 /**
- * Must be stored as DaireUygulamasi.java
+ * Must be stored as CircleMain.java
  *
  */
+package cc.oop.lecture1.basics;
 
-import java.util.Scanner; // klavyeden veri okumak için gerekli Scanner sınıfı (java.util paketi içerisinde tanımlı) dahil ediliyor
-import java.text.DecimalFormat; // Sayıların biçimlenmesi için gerekli DecimalFormat Sınıfı uygulamaya dahil ediliyor
+import java.util.Scanner; // Importing the Scanner class needed for reading input from the keyboard (defined in the java.util package)
+import java.text.DecimalFormat; // Importing the DecimalFormat class needed for formatting numbers
 
 public class CircleMain
 {
     public static void main(String[] s)
     {
+        // Instantiating the Circle class (constructor with 3 parameters is called)
+        Circle circle1 = new Circle(20, 20, 3);
+        System.out.println(circle1.toString()); // Calling daire1.toString() method
+        System.out.println(circle1.calculateArea()); // Calling daire1.calculateArea() method
 
-        // Creating an instance of the Circle class (constructor with 3 parameters is called)
-        Circle daire1 = new Circle(20, 20, 3);
-        System.out.println(daire1.toString()); // Calling daire1.toString() method
-        System.out.println(daire1.calculateArea()); // Calling daire1.alanHesapla() method
-
-// Creating an instance (constructor with 3 parameters is called) and printing values to the screen by calling toString method
+        // Instantiating an object (constructor with 3 parameters is called) and printing values to the screen by calling toString method
         System.out.println(new Circle(50, 40, 100));
 
-// Creating an instance (constructor with 2 parameters is called) and printing values to the screen by calling toString method
+        // Instantiating an object (constructor with 2 parameters is called) and printing values to the screen by calling toString method
         System.out.println(new Circle(25, 50));
 
-// Creating an object from the Scanner class for input from keyboard (System.in)
+
+        //Variables
+
+        //  defining and initializing a variable
+        short temp = 5;
+        System.out.println(new Circle(40, 50, temp));
+
+        //Variable types:
+        // int, long, short, byte, double, float, char, boolean ... Refer to the README
+
+        // Instantiating an object from the Scanner class for input from keyboard (System.in)
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the radius: ");
-        int yariCap = input.nextInt();  // Reading an int value from the keyboard
+        int radius = input.nextInt();  // Reading an int value from the keyboard
 
-/*        Scanner class member methods
+        /*  Scanner class member methods
 
         public byte nextByte()
         public short nextShort()
@@ -40,18 +50,20 @@ public class CircleMain
 
         public String next() // Reads until a space
         public String nextLine() // Reads until a new line is encountered
-*/
+        */
 
-        Circle daire4 = new Circle(20, 20, yariCap);
-        System.out.println(daire4);
-        System.out.println(daire4.calculateArea());
-// System.out.println(daire4.x); // Error... object member variables should not be accessed directly from outside, appropriate set/get methods should be used
+        Circle circle4 = new Circle(20, 20, radius);
+        System.out.println(circle4);
+        System.out.println(circle4.calculateArea());
 
-        System.out.println(daire4.getX());
+        //System.out.println(circle4.x);
+        // Error... object member variables should not be accessed directly from outside,
+        // appropriate set/get methods should be used
+        System.out.println(circle4.getX());
 
-// Ensuring that the area of the circle is printed with 4 decimal places
+        // Ensuring that the area of the circle is printed with 4 decimal places
         DecimalFormat fmt = new DecimalFormat("0.####");
-        System.out.println(fmt.format(daire4.calculateArea()));
+        System.out.println(fmt.format(circle4.calculateArea()));
 
     }
 }

@@ -1,19 +1,20 @@
 
 /**
- * Must be stored as Daire.java
+ * Must be stored as Circle.java
  *
  */
 
+package cc.oop.lecture1.basics;
 
 public class Circle
 {
     // Member variables should not be accessed directly from outside. They are made private for this reason.
-// Access to member variables is provided through the relevant set and get methods.
+    // Access to member variables is provided through the relevant set and get methods.
     private int x;
     private int y;
     private int radius;
 
-    // Constructors are special member methods that are called when an object is created.
+    // Constructors are special member methods that are called when an object is instantiated.
     public Circle(int x, int y, int radius) {
         this.x = x;
         this.y = y;
@@ -21,7 +22,7 @@ public class Circle
     }
 
     // Constructor method is overloaded (function overloading).
-// Method signatures (method name + parameter list) must be different
+    // Method signatures (method name + parameter list) must be different
     public Circle(int x, int y) {
         this.x = x;
         this.y = y;

@@ -1,12 +1,12 @@
-package cc.oop.ders3.collections;
+package cc.oop.lecture1.collections;
 
 public class Book {
     private String name;
     private double unitPrice;
 
-    public Book(String adi, double birimFiyati) {
-        this.name = adi;
-        this.unitPrice = birimFiyati;
+    public Book(String name, double unitPrice) {
+        this.name = name;
+        this.unitPrice = unitPrice;
     }
 
     public String getName() {
