@@ -7,7 +7,7 @@
         Practical Examples
 ## Lecture 2: Classes, Objects, and Inheritance
         Classes, Objects
-        Constructors and Destructors
+        Constructors
         Instance Variables and Methods
         Access Modifiers: Public, Private, Protected
         The Concept of Encapsulation

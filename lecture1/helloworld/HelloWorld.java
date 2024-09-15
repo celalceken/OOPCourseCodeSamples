@@ -1,3 +1,5 @@
+package cc.oop.lecture1.helloworld;
+
 
 /**
  * Must be stored as HelloWorld.java

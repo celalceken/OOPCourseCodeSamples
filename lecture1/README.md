@@ -41,5 +41,6 @@ Hello World
 
 ## Basics of the Java Programming Language
 
+* https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html
 * http://www.w3schools.com/java/ 
 * https://www.geeksforgeeks.org/java-tutorial/
