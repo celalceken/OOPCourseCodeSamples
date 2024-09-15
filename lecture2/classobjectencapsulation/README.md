@@ -15,7 +15,7 @@ its access level is set to "private". Objects can interact with each other throu
     * Reusability of modules in other projects or different parts of the same project increases.
     * Testing the application becomes easier.
 
-# Assignment
+# Exercise
     We want to develop an e-commerce system. We need to manage a Product with attributes such as 
     id, name, unit price, and stock amount. The Product should also support methods to increase 
     stock amount and decrease stock amount.
