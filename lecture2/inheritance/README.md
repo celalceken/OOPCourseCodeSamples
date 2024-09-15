@@ -13,10 +13,10 @@
 
 ##UML Class Diagram of Inheritance Application
 
-![](https://github.com/celalceken/x.png)
+![](https://github.com/celalceken/OOPCourseCodeSamples/blob/main/Files/Inheritance.png)
 
 ## Exercise
-Exercise Title: Enhancing Shape Class for New Shapes and 3D Support
+    Enhancing Shape Class for New Shapes and 3D Support
 
     1. Make the necessary adjustments to the existing shape application to include a new Square class.
     2. Modify the shape classes to support positioning in a 3-dimensional space. Add a new instance variable z for the third dimension and make any necessary changes to methods and constructors.
