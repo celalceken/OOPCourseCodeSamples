@@ -6,7 +6,7 @@
     Polymorphism significantly boosts code reuse and makes changes and extensions easier.
 
 
-##UML Class Diagram of Polymorphism Application
+## UML Class Diagram of Polymorphism Application
 
 ![](https://github.com/celalceken/OOPCourseCodeSamples/blob/main/Files/Inheritance.png)
 
