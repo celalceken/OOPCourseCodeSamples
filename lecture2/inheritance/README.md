@@ -2,7 +2,7 @@
     Allows classes to be derived from other classes, preventing code repetition.
     Should be used between similar entities (e.g., "is a", "is kind of" relationships).
     The derived class inherits the members of the base class.
-    Enables code reuse.
+    Significantly boosts code reuse.
 
 # Modeling
     it is the simplified representation of reality. 

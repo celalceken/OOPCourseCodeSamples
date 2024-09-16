@@ -2,6 +2,10 @@
 
 ## Primitive Types
 
+* As a best practice, we should select the smallest type that has a sufficient range to represent the values we expect.
+* For the exam score, we can choose byte since its range (0 to 127) covers 0-100. 
+* For the world population, we can choose long since the value exceeds 8 billion.
+
 | **Variable Type**    | **Description**                                     | **Example**              | **Range**                |
 |----------------------|-----------------------------------------------------|--------------------------|--------------------------|
 | **Integer Types**    | Stores whole numbers.                              |                          |                          |
