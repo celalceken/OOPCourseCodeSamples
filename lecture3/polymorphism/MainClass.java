@@ -1,9 +1,5 @@
 package cc.oop.lecture3.polymorphism;
 
-import cc.oop.ders2.kalitim.Daire;
-import cc.oop.ders2.kalitim.Dikdortgen;
-import cc.oop.ders2.kalitim.Sekil;
-
 public class MainClass {
 
     public static void main(String[] args) {
