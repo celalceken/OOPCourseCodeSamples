@@ -8,7 +8,7 @@
 
 ## UML Class Diagram of Polymorphism Application
 
-![](https://github.com/celalceken/OOPCourseCodeSamples/blob/main/Files/Inheritance.png)
+![](https://github.com/celalceken/OOPCourseCodeSamples/blob/main/Files/Polymorphism.png)
 
 ## Exercise
     Modify the application to also support the Square shape. The Square class should inherit from the Shape class, 

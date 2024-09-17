@@ -9,33 +9,9 @@ public class MainClass {
                 new EquilateralTriangle(2, 2, "Green", 3.0)
         };
 
-        // Display each shape
+        // Draw each shape
         for (Shape shape : shapes) {
-            printShape(shape);
-            //System.out.println(shape);
-            //System.out.println("Area: " + shape.calculateArea());
+            ShapeRenderer.render1(shape);
         }
     }
-
-    // Polymorphism allows client code (printShape()) to handle different shapes without modification.
-    public static void printShape(Shape shape) {
-        System.out.println(shape);
-        //System.out.println("Area = " + shape.calculateArea());
-    }
-
-    // Without polymorphism, each new shape would require changes to the client code (printShape2()).
-    public static void printShape2(Shape shape) {
-        if (shape instanceof Circle) {
-            Circle circle = (Circle) shape;
-            System.out.println(circle);
-            System.out.println("Area (without polymorphism) = " + circle.calculateArea());
-        } else if (shape instanceof Rectangle) {
-            Rectangle rectangle = (Rectangle) shape;
-            System.out.println(rectangle);
-            System.out.println("Area (without polymorphism) = " + rectangle.calculateArea());
-        }//...
-    }
-
-
-
 }
