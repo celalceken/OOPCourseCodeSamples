@@ -4,7 +4,7 @@
 * Interfaces specify what a class can do ("is capable of").
 * They define what must be done, not how.
 
-### Though interface:
+### Through interface:
 * Client code can use the dependent code even though it is not implemented yet (enabling parallel development).
 * Client code supports new features without a modification (Open/Closed Principle).
 * Changes in the dependent code do not affect the client code (loose coupling). 
