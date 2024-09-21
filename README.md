@@ -6,13 +6,13 @@
         Setting Up the Development Environment
         Practical Examples
 ## Lecture 2: Classes, Objects, and Inheritance
+        Modeling with UML
         Classes, Objects
         Constructors
         Instance Variables and Methods
         Access Modifiers: Public, Private, Protected
         The Concept of Encapsulation
         Getters and Setters
-        Modeling with UML
         Inheritance
         Practical Examples
 ## Lecture 3: Object Relationships and Polymorphism
@@ -22,15 +22,15 @@
         Polymorphism in Practice
         Object Relationships
 ## Lecture 4: Abstract Classes and Interfaces
-        Defining and Using Abstract Classes
-        Interfaces: Definition and Use
-        Differences between Abstract Classes and Interfaces
+        Abstract Class
+        Interface
+        The Importance of Abstraction in Object-Oriented Programming
         Practical Examples
 ## Lecture 5: Case Study: ATM System
         Requirement Analysis
         Forming UML Class Diagram
         From Model To Code
-        Refactoring Code for Maintainability
+        Refactoring for Maintainability
 ## Lecture 6: Object-Oriented Design Principles
         Coupling and Cohesion
         SOLID Principles Overview
@@ -69,7 +69,7 @@
 ## Lecture 13: Working with Databases 2
         Object-Relational Mapping (ORM)
         Practical Examples
-        Integrating file support into the ATM Case Study
+        Database Operations in the ATM Case Study
 ## Lecture 14: Testing and Debugging
         Unit Testing and Test-Driven Development (TDD)
         Debugging Techniques in OOP
