@@ -26,12 +26,13 @@
         Interface
         The Importance of Abstraction in Object-Oriented Programming
         Practical Examples
-## Lecture 5: Case Study: ATM System
+## Lecture 5: Understanding Requirements and Modeling: The ATM System Case Study
         Requirement Analysis
         Forming UML Class Diagram
         From Model To Code
-        Refactoring for Maintainability
-## Lecture 6: Object-Oriented Design Principles
+## Lecture 6: Developing and Improving the ATM System: The ATM System Case Study
+        Refactoring the ATM System for Maintainability
+## Lecture 7: Object-Oriented Design Principles
         Coupling and Cohesion
         SOLID Principles Overview
         Single Responsibility Principle (SRP)
@@ -39,40 +40,37 @@
         Liskov Substitution Principle (LSP)
         Interface Segregation Principle (ISP)
         Dependency Inversion Principle (DIP)
-## Lecture 7: Exception Handling
+## Lecture 8: Exception Handling
         Error Handling in OOP
         Forming Custom Exceptions
         Best Practices for Exception Handling
         Practical Examples
-## Lecture 8: File I/O and Serialization
+## Lecture 9: File I/O and Serialization
         Basics of File Input/Output
         Reading and Writing Files
         Serialization and Deserialization of Objects
         Integrating file support into the ATM Case Study
-## Lecture 9: Collections and Functional Programming (Lambda Expressions)
+## Lecture 10: Collections and Functional Programming (Lambda Expressions)
         Introduction to Collections Framework (Lists, Sets, Maps, etc.)
         List Interface
         Traversing and Transforming Data with Lambda Expressions
         Practical Examples
-## Lecture 10: GUI Development with OOP 1
+## Lecture 11: GUI Development with OOP
         Introduction to GUI Frameworks (e.g., Swing, JavaFX, or similar)
         Building Simple GUI Applications
         Practical Examples
-## Lecture 11: GUI Development with OOP 2
-        Enhancing the ATM Case Study with GUI Support
 ## Lecture 12: Working with Databases 1
         Introduction to Databases and SQL
         Setting Up Development Environments for Database Operations
         Basic SQL Statements
         Connecting OOP with Databases
-        CRUD Operations using OOP
 ## Lecture 13: Working with Databases 2
-        Object-Relational Mapping (ORM)
+        Defining Entities and Persisting Them Using the Repository Pattern
         Practical Examples
-        Database Operations in the ATM Case Study
-## Lecture 14: Testing and Debugging
-        Unit Testing and Test-Driven Development (TDD)
-        Debugging Techniques in OOP
-        Automated Testing Tools (e.g., JUnit)
+## Lecture 14: Testing 
+        Introduction to Software Testing
+        Types of Testing
+        Unit Testing in Detail
+        JUnit Framework
 ## Lecture 15: Final Project Assessment and Oral Examination
         During the final project phase, questions will be asked, and marks will be awarded based on your responses and performance.
