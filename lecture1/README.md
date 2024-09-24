@@ -7,7 +7,7 @@
 
 * To develop Java applications, you need to install the Java Development Kit (JDK).
 
-```java
+~~~java
 /**
  * Must be stored as HelloWorld.java
  *
@@ -20,22 +20,22 @@ public class HelloWorld {
     }
 
 }
-```
+~~~
 
 Compiling
-```console
+~~~console
 javac HelloWorld.java
-```
+~~~
 
 Running
-```console
+~~~console
 java HelloWorld.java
-```
+~~~
 
 Output
-```console
+~~~console
 Hello World
-```
+~~~
 ## Running Applications from this Repository with IntelliJ IDEA
  * https://youtu.be/g_0uV6jEKcM
 
