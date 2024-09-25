@@ -16,3 +16,8 @@
 
 ## Exercise
     Modify the application to also support the MongoDB and Redis database management systems.
+    
+    Copy the lecture3/relationships package to here. 
+    Write a getShortAddress() method in the Address class that returns a shortened version of the address 
+    by combining the city with the first 10 characters of the address line. Write an interface for the 
+    Address class to decouple it from the Customer class
