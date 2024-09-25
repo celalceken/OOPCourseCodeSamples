@@ -26,13 +26,7 @@
         Interface
         The Importance of Abstraction in Object-Oriented Programming
         Practical Examples
-## Lecture 5: Understanding Requirements and Modeling: The ATM System Case Study
-        Requirement Analysis
-        Forming UML Class Diagram
-        From Model To Code
-## Lecture 6: Developing and Improving the ATM System: The ATM System Case Study
-        Refactoring the ATM System for Maintainability
-## Lecture 7: Object-Oriented Design Principles
+## Lecture 5: Object-Oriented Design Principles
         Coupling and Cohesion
         SOLID Principles Overview
         Single Responsibility Principle (SRP)
@@ -40,6 +34,13 @@
         Liskov Substitution Principle (LSP)
         Interface Segregation Principle (ISP)
         Dependency Inversion Principle (DIP)
+## Lecture 6: Understanding Requirements and Modeling: The ATM System Case Study
+        Requirement Analysis
+        Forming UML Class Diagram
+        From Model To Code
+## Lecture 7: Developing and Improving the ATM System: The ATM System Case Study
+        Refactoring the ATM System for Maintainability
+
 ## Lecture 8: Exception Handling
         Error Handling in OOP
         Forming Custom Exceptions
