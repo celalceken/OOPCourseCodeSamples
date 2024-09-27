@@ -185,3 +185,28 @@ public class PaymentService {
 }
 
 ~~~
+
+## Exercise 1: try and catch
+Apply all the modifications into lecture3/relationships/MainClass.java
+
+Add error handling to the customer input process. For example, handle cases where the user leaves any field empty (e.g., name or phone number) or enters invalid data for the phone number.
+
+### Steps:
+Modify the customer input section to wrap in a try block.
+Throw an exception if any input field is left empty or if an invalid phone number format is entered.
+Catch the exception and display an appropriate error message.
+
+## Exercise 2: Custom Exception
+Create a custom exception for invalid customer data (e.g., invalid username or password). This exception should be thrown if the username is too short or the password doesn’t meet specific criteria (e.g., length or complexity).
+
+### Steps:
+Define a custom exception class InvalidCustomerDataException.
+Throw the custom exception when the username or password is invalid.
+Catch the custom exception and display a relevant message to the user.
+
+## Exercise 3: finally Block
+Ensure that the Scanner resource is properly closed after reading user input by using a finally block.
+
+### Steps:
+Add a finally block to close the Scanner object, even if an exception occurs during input handling.
+Ensure that the Scanner object is closed to prevent resource leaks.
