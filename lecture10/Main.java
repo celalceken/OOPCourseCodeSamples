@@ -20,10 +20,10 @@ public class Main {
         double[] decimals = new double[8];
         System.out.println(decimals.length);
 
-        Book book1 = new Book("Database Management Systems ", 100.00);
+        Book book1 = new Book("Database Management Systems ", 180.00);
         Book book2 = new Book("OOP ", 125.00);
-        Book book3 = new Book("Network Programming", 150.00);
-        Book book4 = new Book("Data Structures", 250.00);
+        Book book3 = new Book("Network Programming", 230.00);
+        Book book4 = new Book("Data Structures", 210.00);
 
         Book[] staticBookArray = new Book[3];
         staticBookArray[0] = book1;
@@ -186,6 +186,31 @@ public class Main {
             System.out.println("ISBN: " + entry.getKey() + " - Book: " + entry.getValue());
         }
 
+        System.out.println("*************Search Operation*************");
+
+        // Search example: Linear Search by book title
+        String searchTitle = "Data Structures";
+        Book foundBook = searchBookByTitle(bookArrayList, searchTitle);
+        if (foundBook != null) {
+            System.out.println("Book found: " + foundBook);
+        } else {
+            System.out.println("Book with title '" + searchTitle + "' not found.");
+        }
+
+        System.out.println("*************Sort Operation*************");
+
+        // Sort example: Sort the books by unit price in ascending order
+        System.out.println("\nBooks before sorting by price:");
+        bookArrayList.forEach(System.out::println);
+
+        // Sort books by unit price using Comparator
+        sortBooksByPrice(bookArrayList);
+
+        System.out.println("\nBooks after sorting by price:");
+        bookArrayList.forEach(System.out::println);
+
+
+
 
 
         /**
@@ -245,4 +270,20 @@ public class Main {
                 .collect(Collectors.toList());
         System.out.println(sortedAndFilteredBooks);
     }
+
+    // Linear search method to find a book by its title
+    public static Book searchBookByTitle(List<Book> books, String title) {
+        for (Book book : books) {
+            if (book.getName().equalsIgnoreCase(title)) {
+                return book;
+            }
+        }
+        return null; // return null if no book is found
+    }
+
+    // Sorting method to sort books by unit price
+    public static void sortBooksByPrice(List<Book> books) {
+        books.sort(Comparator.comparing(Book::getUnitPrice));
+    }
+
 }
