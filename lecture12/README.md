@@ -7,22 +7,19 @@
     + PostgreSQL: [PostgreSQL Download](https://www.postgresql.org/download)
 - pgAdmin installation
     + pgAdmin: Distributed with PostgreSQL.
-- Valentina Studio: [Valentina Studio Overview](https://www.valentina-db.com/en/valentina-studio-overview)
 - Importing/Exporting the NorthWind database
-    + [Download database for VS import here](https://github.com/celalceken/DatabaseManagementSystems/blob/master/OrnekVeritabanlari/NorthWind.sql.zip)
     + [Download database for pgAdmin import here](https://github.com/celalceken/DatabaseManagementSystems/blob/master/OrnekVeritabanlari/NorthWind.backup)
-- Importing/Exporting the Pagila database: [Pagila Database](http://www.postgresqltutorial.com/postgresql-sample-database)
 
 ### Structured Query Language (SQL)
 
-- SQL functions can be divided into two sections:
+- SQL statements can be divided into two categories:
     1. **Data Definition Language (DDL):** Structural commands for creating, modifying, deleting databases, tables, relationships, etc.
-    2. **Data Manipulation Language (DML):** Commands for inserting, deleting, updating, querying data, etc.
+    2. **Data Manipulation Language (DML):** Commands for inserting, deleting, updating, and querying data.
 
 ---
 
 ## Basic SQL Commands (SQL DML Commands; SELECT, JOIN, INSERT, UPDATE, DELETE)
-
+You need to import **Northwind** sample database for the following SQL statements
 ### SELECT
 
 The SELECT command is used to retrieve data from the database.
@@ -134,10 +131,45 @@ WHERE "OrderDate" BETWEEN '07/04/1996' AND '07/09/1996';
 Joining tables combines records from two or more tables in a database.
 
 #### Inner Join
+![](https://github.com/celalceken/DatabaseManagementSystems/blob/master/Sekiller/06/DogalBirlestirme.png)
 ~~~sql
 SELECT * FROM "Musicians" INNER JOIN "Cities"
   ON "Musicians"."CityCode" = "Cities"."CityCode";
 ~~~
+
+~~~sql
+SELECT
+  "public"."orders"."OrderID",
+  "public"."customers"."CompanyName",
+  "public"."customers"."ContactName",
+  "public"."orders"."OrderDate"
+FROM "orders"
+       INNER JOIN "customers" ON "orders"."CustomerID" = "customers"."CustomerID"
+~~~
+
+#### Left Outer Join
+~~~sql
+SELECT
+"orders"."OrderID" AS "siparisNo",
+"customers"."CompanyName" AS "sirket",
+"orders"."OrderDate" AS "siparisTarihi"
+FROM "customers"
+LEFT OUTER JOIN "orders" ON "orders"."CustomerID" = "customers"."CustomerID"
+ORDER BY "OrderID" DESC;
+~~~
+
+#### Right Outer Join
+~~~sql
+SELECT
+  "orders"."OrderID" AS "siparisNo",
+  "employees"."FirstName" AS "satisTemsilcisiAdi",
+  "employees"."LastName" AS "satisTemsilcisiSoyadi",
+  "orders"."OrderDate" AS "siparisTarihi"
+FROM "orders"
+       RIGHT OUTER JOIN "employees" ON "orders"."EmployeeID" = "employees"."EmployeeID"
+ORDER BY "OrderID" DESC;
+~~~
+
 
 ### INSERT
 The INSERT command is used to add new rows to a table.
