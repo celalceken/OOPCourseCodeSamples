@@ -62,3 +62,47 @@ like searching, inserting, and deleting data.
 * No iterative structures (loops) are present.
 * Since state changes are not allowed, parallel programs can be written (used in stream processing).
 * Lambda expressions are a powerful feature  that enhances code clarity.
+
+
+## Exercise 1: Working with List and Functional Programming (Lambda Expressions)
+
+### Task:
+    Create a List<Book> to store books.
+    Add at least 5 Book objects to the list.
+    Write a lambda expression that:
+        Prints the titles of all books.
+        Calculates and prints the sum of all book prices.
+        Filters and prints books with a price greater than 150.
+
+### Hints:
+    Use forEach() to print each book's title.
+    Use stream(), mapToDouble(), and sum() to calculate the total price.
+    Use stream(), filter(), and collect() to filter and display books with a price over 150.
+
+## Exercise 2: Sorting Set<Book> using Comparator and Lambda Expressions
+
+### Task:
+    Create a Set<Book> to store books. Ensure that duplicate books (based on title) are not allowed.
+    Add at least 5 Book objects to the set.
+    Sort the books in two different ways using lambda expressions:
+        Sort the books by title in ascending order.
+        Sort the books by price in descending order.
+    Print the sorted books.
+
+## Exercise 3: Using Map and Lambda Expressions to Group Books by Price
+
+### Task:
+    Form a Map<String, List<Book>> where:
+        The key is a price range ("Low", "Medium", "High").
+        The value is a list of books that fall into that price range.
+    Add at least 5 Book objects with different prices to the map.
+    Write a lambda expression that groups the books into the following categories:
+        "Low": Price <= 100
+        "Medium": Price between 101 and 200
+        "High": Price > 200
+    Print each price category and the corresponding list of books.
+
+### Hints:
+    Use stream().filter() to filter books into their price ranges.
+    Store the books in a Map<String, List<Book>> based on their price range.
+    Print the map using forEach() and lambda expressions.
