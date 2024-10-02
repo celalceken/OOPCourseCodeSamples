@@ -3,7 +3,7 @@ package cc.oop.lecture10;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Main {
+public class MainClass {
 
     public static void main(String[] Args) {
 
