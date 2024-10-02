@@ -16,6 +16,7 @@ like searching, inserting, and deleting data.
     Dynamically resizes.
     Allows duplicates.
     Maintains insertion order.
+    ArrayList does not automatically shrink when elements are removed. However, you can manually reduce its size using the trimToSize() method. This reduces the capacity of the ArrayList to the current size of the list, releasing any extra memory.
 
 ### Lists-Vector (Dynamic Array)
     The size of the array is determined at runtime and can be resized during execution.
@@ -23,6 +24,7 @@ like searching, inserting, and deleting data.
     Allows duplicates.
     Maintains insertion order.
     Thread-safe.
+    ArrayList does not automatically shrink when elements are removed. However, like ArrayList, you can manually reduce its size by using trimToSize().
 
 ### Lists-LinkedList
     Doubly linked list implementation of the List interface. It allows fast insertion and removal at both ends.
