@@ -260,3 +260,25 @@ public class DatabaseOperations {
     }
 }
 ~~~
+
+## Exercise 1: Add a New Customer
+
+### Task:
+    Define a new method called addCustomer that takes customer information (e.g., customerID, companyName, contactName, etc.) as input and inserts it into the database.
+    Use JDBC to establish a connection with the Northwind database.
+    Use a PreparedStatement to insert the data into the database.
+
+## Exercise 2: Read Product Information
+
+### Task:
+    Write a method getAllProducts() to fetch the ProductID, ProductName, UnitPrice, and UnitsInStock columns.
+    Use ResultSet to retrieve the data from the database and print each product's details.
+
+## Exercise 3: Update and Delete a Product
+
+### Task:
+    Define an updateProductPrice method that takes ProductID and newUnitPrice as input, and updates the price in the database.
+    Define a deleteProduct method that deletes a product from the database using the ProductID.
+
+
+
