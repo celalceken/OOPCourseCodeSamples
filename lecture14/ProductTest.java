@@ -47,5 +47,15 @@ public class ProductTest {
         assertSame(product1, product2);
     }
 
+    @Test
+    public void testMultipleAssertions() {
+        Product product = new Product(1, "Laptop", 1000.0, 10);
+        assertAll("product",
+                () -> assertEquals(1, product.getId()),
+                () -> assertEquals("Laptop", product.getName()),
+                () -> assertEquals(1000.0, product.getPrice()),
+                () -> assertEquals(10, product.getStock())
+        );
+    }
 }
 

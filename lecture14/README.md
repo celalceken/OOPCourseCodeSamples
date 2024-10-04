@@ -117,6 +117,8 @@ public class ProductTest {
         assertSame and assertNotSame
             assertSame(expected, actual): Asserts that two variables refer to the same object.
             assertNotSame(expected, actual): Asserts that two variables refer to different objects.
+        assertAll
+            assertAll(executables...): Allows grouping multiple assertions into a single test, and all assertions will be checked even if some fail.
 
     Test Isolation: JUnit tests run independently, ensuring that the outcome of one test does not affect others.
 
