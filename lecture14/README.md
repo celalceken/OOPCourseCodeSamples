@@ -101,6 +101,36 @@ public class ProductTest {
         product.setPrice(1200.0);
         assertEquals(1200.0, product.getPrice());
     }
+
+    @Test
+    public void testIsInStock() {
+        Product product = new Product(1, "Laptop", 1000.0, 10);
+        assertTrue(product.getStock() > 0);
+    }
+
+    @Test
+    public void testProductNotNull() {
+        Product product = new Product(1, "Laptop", 1000.0, 10);
+        assertNotNull(product);
+    }
+
+    @Test
+    public void testSameProduct() {
+        Product product1 = new Product(1, "Laptop", 1000.0, 10);
+        Product product2 = product1;
+        assertSame(product1, product2);
+    }
+
+    @Test
+    public void testMultipleAssertions() {
+        Product product = new Product(1, "Laptop", 1000.0, 10);
+        assertAll("product",
+                () -> assertEquals(1, product.getId()),
+                () -> assertEquals("Laptop", product.getName()),
+                () -> assertEquals(1000.0, product.getPrice()),
+                () -> assertEquals(10, product.getStock())
+        );
+    }
 }
 ~~~
 
